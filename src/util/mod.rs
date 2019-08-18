@@ -1,6 +1,6 @@
-use std::process::Command;
-use std::net::Ipv4Addr;
 use regex::Regex;
+use std::net::Ipv4Addr;
+use std::process::Command;
 
 #[cfg(windows)]
 pub fn get_ipv4_address() -> Option<Ipv4Addr> {
@@ -15,7 +15,7 @@ pub fn get_ipv4_address() -> Option<Ipv4Addr> {
             let host = host.as_str();
             if host != "127.0.0.1" {
                 if let Ok(addr) = host.parse::<Ipv4Addr>() {
-                    return Some(addr)
+                    return Some(addr);
                 }
             }
         }
@@ -37,7 +37,7 @@ pub fn get_ipv4_address() -> Option<Ipv4Addr> {
             let host = host.as_str();
             if host != "127.0.0.1" {
                 if let Ok(addr) = host.parse::<Ipv4Addr>() {
-                    return Some(addr)
+                    return Some(addr);
                 }
             }
         }
