@@ -1,0 +1,9 @@
+[package]
+name = "nas"
+description = "Network-Attached Storage"
+version = "0.1.0"
+authors = ["Antonio Román <kyradiscord@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.2.1"
